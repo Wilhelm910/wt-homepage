@@ -7,3 +7,65 @@
     display: flex;
     justify-content: space-between;
 }
+
+svg {
+    cursor: pointer;
+}
+
+.menu {
+    background-color: #FFFCF3;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Syne';
+    font-weight: 700;
+    font-size: 45px;
+
+    div {
+        margin: 8px;
+        border: 4px solid black;
+        position: relative;
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: #FFFCF3;
+        }
+
+        &:before {
+            top: -0.3em; // let it overlap a bit to prevent thin line which could appear during scaling in some browsers etc.
+            bottom: -0.3em;
+            left: 0.3em;
+            right: -0.3em;
+        }
+
+        &:after {
+            left: -0.3em;
+            right: 0em;
+            top: -0.3em;
+            bottom: 20px;
+        }
+
+        // you need this to move the text in front of the ::after overlay
+        a {
+            padding: 8px;
+            position: relative;
+            z-index: 4;
+        }
+    }
+
+}
