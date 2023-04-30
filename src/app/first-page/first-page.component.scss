@@ -1,0 +1,112 @@
+.profession-area {
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+    h1 {
+        font-family: 'Syne';
+        letter-spacing: -0.025em;
+        line-height: 120%;
+        font-weight: 800;
+        font-size: 45px;
+    }
+
+    div {
+        margin-top: -42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span {
+        width: 180px;
+        border: 3px solid #000000;
+    }
+
+    p {
+        margin-left: 12px;
+        color: #FF9900;
+        letter-spacing: -0.025em;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 100%;
+    }
+}
+
+.send-btn {
+    margin-top: 64px;
+    background-color: #FFFCF3;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+
+    a {
+        font-size: 23px;
+        padding: 20px 40px;
+        border: 4px solid #000000;
+
+    }
+
+}
+
+.moving-arrow {
+    margin-right: 32px;
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    object-fit: cover;
+
+    img {
+        animation: jumpInfinite 1.5s infinite;
+        height: 100%;
+    }
+}
+
+
+@keyframes jumpInfinite {
+    0% {
+        transform: translateY(-70px);
+    }
+
+    100% {
+        transform: translateY(+250px);
+    }
+}
+
+
+
+.bottom {
+    margin-left: 32px;
+    margin-right: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    p {
+        margin: 0;
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+}
+
+.position-rel {
+    padding-left: 16px;
+    position: relative;
+    z-index: 1;
+    background-color: #FFFCF3;
+}
+
+.hide-element {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    background-color: #FFFCF3;
+}
