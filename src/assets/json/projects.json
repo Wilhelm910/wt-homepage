@@ -1,0 +1,32 @@
+[
+    {
+        "image": "assets/img/p-join.svg",
+        "name": "Join",
+        "categorys": "Angular | Typescript | HTML | CSS | Firebase",
+        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+        "button1": "Live test",
+        "button2": "Github",
+        "link1": "www.google.de",
+        "link2": "https://github.com/Wilhelm910/Join-"
+    },
+    {
+        "image": "assets/img/p-sharkie.svg",
+        "name": "Join",
+        "categorys": "Angular | Typescript | HTML | CSS | Firebase",
+        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+        "button1": "Live test",
+        "button2": "Github",
+        "link1": "www.google.de",
+        "link2": "https://github.com/Wilhelm910/Join-"
+    },
+    {
+        "image": "assets/img/p-pokedex.svg",
+        "name": "Join",
+        "categorys": "Angular | Typescript | HTML | CSS | Firebase",
+        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+        "button1": "Live test",
+        "button2": "Github",
+        "link1": "www.google.de",
+        "link2": "https://github.com/Wilhelm910/Join-"
+    }
+]

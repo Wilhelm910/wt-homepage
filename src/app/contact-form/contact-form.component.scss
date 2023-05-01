@@ -1,0 +1,56 @@
+.form-section {
+    background: #000000;
+    margin-top: -35px;
+    padding-bottom: 32px;
+}
+
+form {
+    margin: 32px;
+    scroll-margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+input,
+textarea {
+    margin: 8px 0;
+    font-family: 'Overpass';
+    padding: 10px 25px;
+    gap: 10px;
+    height: 30px;
+    width: 280px;
+    background: #000000;
+    border: none;
+    border-bottom: 2px solid #FFFCF3;
+    color: #FFFCF3;
+
+    &::placeholder {
+        color: #FFFCF3;
+        opacity: 1;
+    }
+
+    &:focus {
+        outline: none;
+        border: 4px solid  #FFFCF3;;
+    }
+}
+
+textarea {
+    min-height: 200px;
+}
+
+button {
+    color: #FFFCF3;
+    background: #000000;
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    border: 4px solid #FFFCF3;
+    padding: 20px 40px;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 24px;
+}

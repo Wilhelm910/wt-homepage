@@ -1,0 +1,31 @@
+.footer-section {
+    background-color: black;
+    color:  #FFFCF3;
+    text-align: center;
+    padding-bottom: 32px;
+
+    div {
+        display: flex;
+        justify-content: center;
+
+        >svg {
+            margin: 16px;
+            transition: all 175ms ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                transform: translateY(-10px);
+                transition: all 175ms ease-in-out;
+            }
+        }
+        >a {
+            margin-top: 16px;
+        }
+    }
+
+}
+
+a {
+    color:  #FFFCF3;
+   
+}

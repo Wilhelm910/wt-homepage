@@ -1,0 +1,40 @@
+.contact-introduction {
+    background-color: black;
+
+    h3 {
+        margin: -80px 32px 0 32px;
+        font-family: 'Syne';
+        font-weight: 800;
+        font-size: 45px;
+        color: #FFFCF3;
+        animation: color-change 3s infinite;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        text-align: center;
+        color: #FF9900;
+    }
+
+    p {
+        margin-left: 32px;
+        margin-right: 32px;
+        padding-bottom: 32px;
+        font-size: 23px;
+        line-height: 120%;
+        color: #FFFCF3;
+        text-align: center;
+    }
+
+    @keyframes color-change {
+        50% {
+            color: #FF9900;
+        }
+
+        100% {
+            color: #FFFCF3;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+fieldset {
+    border: 4px solid black;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+legend {
+    font-family: 'Syne';
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+
+.svg-container {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 8px;
+        flex: 1 1 auto;
+
+        p {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 120%;
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        &:hover {
+            img {
+                animation: move-skill-icon 1s;
+            }
+
+            p {
+                color: #FF9900;
+            }
+        }
+    }
+}
+
+@keyframes move-skill-icon {
+    33% {
+        transform: translateX(30px);
+    }
+
+    66% {
+        transform: translateX(-30px);
+    }
+}

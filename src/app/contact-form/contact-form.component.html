@@ -1,0 +1,12 @@
+<div class="form-section">
+    <form id="contact" (submit)="sendMail()" ngNativeValidate #myForm>
+
+        <p style="color:white">Test</p>
+        <input required type="text" placeholder="Your name" name="name" #nameField>
+
+        <input required type="email" placeholder="Your email" name="email" #emailField>
+        <textarea required class="textarea" type="textarea" placeholder="Your message" name="message"
+            #messageField></textarea>
+        <button #buttonField>Send message</button>
+    </form>
+</div>
