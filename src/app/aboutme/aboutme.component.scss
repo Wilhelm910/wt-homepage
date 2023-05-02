@@ -9,11 +9,30 @@
         letter-spacing: 0.01em;
         line-height: 100%;
         margin-bottom: 16px;
+
+        @media (min-width: 680px) {
+            font-size: 64px;
+        }
+
+        @media (min-width: 980px) {
+            font-size: 78px;
+        }
     }
 
     p {
         margin-left: 32px;
         margin-right: 32px;
+
+        @media (min-width: 680px) {
+            margin-left: 64px;
+            margin-right: 64px;
+        }
+
+        @media (min-width: 1200px) {
+            margin-left: 128px;
+            margin-right: 128px;
+        }
+
     }
 
     div {
@@ -77,9 +96,10 @@ svg {
     100% {
         width: 255px;
     }
-  //  100% {
- //       transform: translate(-100px, 100px) rotate(-45deg) translateY(-1px);
-  //  }
+
+    //  100% {
+    //       transform: translate(-100px, 100px) rotate(-45deg) translateY(-1px);
+    //  }
 
 }
 
