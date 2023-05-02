@@ -1,37 +1,3 @@
-.aboutme-section {
-    margin-top: 20px;
-
-    h2 {
-        font-family: 'Syne';
-        font-weight: 800;
-        font-size: 45px;
-        text-align: center;
-        letter-spacing: 0.01em;
-        line-height: 100%;
-        margin-bottom: 16px;
-    }
-
-    p {
-        margin-left: 32px;
-        margin-right: 32px;
-    }
-
-    div {
-        position: relative;
-        z-index: 2;
-        margin-top: 128px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    img {
-        width: 336px;
-        height: 336px;
-        object-fit: cover;
-        object-position: 50% 20%
-    }
-}
 
 .arrow-box {
     width: 300px;
@@ -43,9 +9,6 @@
     height: 200px;
 }
 
-svg {
-    position: absolute;
-}
 
 .diagonal {
     position: absolute;

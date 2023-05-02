@@ -2,6 +2,8 @@ fieldset {
     border: 4px solid black;
     margin-left: 24px;
     margin-right: 24px;
+    position: relative;
+    z-index: 3;
 }
 
 legend {

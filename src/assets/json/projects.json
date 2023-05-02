@@ -3,40 +3,40 @@
         "image": "assets/img/p-join.svg",
         "name": "Join",
         "categorys": "Javascript | HTML | CSS",
-        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "button1": "Test",
         "button2": "Github",
-        "link1": "www.google.de",
+        "link1": "https://f01545d7@wilhelm-teicke.developerakademie.net/Join/index.html",
         "link2": "https://github.com/Wilhelm910/Join-"
     },
     {
         "image": "assets/img/p-sharkie.svg",
         "name": "Sharkie",
         "categorys": "Javascript | HTML | CSS",
-        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+        "description": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
         "button1": "Test",
         "button2": "Github",
-        "link1": "www.google.de",
-        "link2": "https://github.com/Wilhelm910/Join-"
+        "link1": "https://f01545d7@wilhelm-teicke.developerakademie.net/Sharkie/index.html",
+        "link2": "https://github.com/Wilhelm910/Sharkie"
     },
     {
         "image": "assets/img/p-pokedex.svg",
         "name": "Pokedex",
         "categorys": "Javascript | HTML | CSS | API",
-        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+        "description": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
         "button1": "Test",
         "button2": "Github",
-        "link1": "www.google.de",
-        "link2": "https://github.com/Wilhelm910/Join-"
+        "link1": "https://f01545d7@wilhelm-teicke.developerakademie.net/Pokedex/index.html",
+        "link2": "https://github.com/Wilhelm910/Pokedex"
     },
     {
         "image": "assets/img/p-pokedex.svg",
         "name": "Ring of Fire",
         "categorys": "Angular | Typescript | HTML | SCSS | Firebase",
-        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+        "description": "A simple card game.",
         "button1": "Test",
         "button2": "Github",
-        "link1": "www.google.de",
-        "link2": "https://github.com/Wilhelm910/Join-"
+        "link1": "https://wt-ringoffire.web.app/",
+        "link2": "https://github.com/Wilhelm910/wt-ringoffire"
     }
 ]

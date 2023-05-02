@@ -11,6 +11,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FooterComponent } from './footer/footer.component';
+import { MovingArrowComponent } from './moving-arrow/moving-arrow.component';
+import { MovingArrowToRightComponent } from './moving-arrow-to-right/moving-arrow-to-right.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FooterComponent } from './footer/footer.component';
     PortfolioComponent,
     ContactComponent,
     ContactFormComponent,
-    FooterComponent
+    FooterComponent,
+    MovingArrowComponent,
+    MovingArrowToRightComponent
   ],
   imports: [
     BrowserModule,
