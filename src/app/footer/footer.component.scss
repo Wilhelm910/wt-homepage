@@ -9,7 +9,6 @@
         justify-content: center;
 
         >svg {
-            margin: 16px;
             transition: all 175ms ease-in-out;
             cursor: pointer;
 
@@ -19,7 +18,7 @@
             }
         }
         >a {
-            margin-top: 16px;
+            margin: 16px;
         }
     }
 

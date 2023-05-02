@@ -33,14 +33,13 @@
 }
 
 .arrow-box {
-    margin-left: 32px;
-    margin-right: 32px;
+    width: 300px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    height: 300px;
+    height: 200px;
 }
 
 svg {
@@ -69,13 +68,13 @@ svg {
 
 @keyframes moving-arrow {
     100% {
-        transform: translate(-170px, 170px);
+        transform: translate(-80px, 80px);
     }
 }
 
 @keyframes moving-arrow2 {
     100% {
-        width: 380px;
+        width: 255px;
     }
   //  100% {
  //       transform: translate(-100px, 100px) rotate(-45deg) translateY(-1px);
@@ -84,16 +83,16 @@ svg {
 }
 
 .movedDiag {
-    animation: moving-arrow2 2s forwards;
+    animation: moving-arrow2 0.5s forwards;
 }
 
 .movedHead {
-    animation: moving-arrow 2s forwards;
+    animation: moving-arrow 0.5s forwards;
 }
 
 .hide-diag {
-    transform: rotate(-45deg) translateY(75px);
-    width: 220px;
+    transform: rotate(-45deg) translateY(40px);
+    width: 120px;
     height: 10px;
     position: absolute;
     background-color: #FFFCF3;

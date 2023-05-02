@@ -26,7 +26,7 @@ svg {
     left: 0;
     right: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 998;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,6 +34,7 @@ svg {
 }
 
 .navigation {
+    margin-top: -150px;
     display: flex;
     flex-direction: column;
     font-family: 'Syne';
@@ -98,23 +99,32 @@ svg {
 
 }
 
-.inclined-line {
-    margin-bottom: -170px;
-    margin-top: 180px;
-    width: 110%;
-    height: 300px;
-    transform: rotate(5deg);
+.bg-color {
     background-color: black;
+}
+
+.rect {
+    margin-bottom: -70px;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+    padding-bottom: 16px;
+}
+
+.margin32 {
+    margin-right: 32px;
 }
 
 
 .navigation2 {
-    padding-bottom: 32px;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: black;
+    animation: moving-nav 0.5s forwards;
 
     p {
         margin-left: 32px;
@@ -125,6 +135,7 @@ svg {
         font-size: 45px;
         color: #FFFCF3;
         animation: color-change 3s infinite;
+        background-color: black;
     }
 
     @keyframes color-change {
@@ -145,6 +156,15 @@ svg {
     }
 }
 
+@keyframes moving-nav {
+    0% {
+        bottom: -200px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
 @keyframes moving-border {
 
     10% {
@@ -153,5 +173,19 @@ svg {
 
     100% {
         right: 100px;
+    }
+}
+
+.movedNavOut {
+    animation: moving-nav2 0.5s forwards;
+
+}
+
+@keyframes moving-nav2 {
+    0% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: -200px;
     }
 }

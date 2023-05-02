@@ -15,6 +15,6 @@ export class AboutmeComponent {
     this.movedHead = true;
     setTimeout(() => {
       this.hideDiag = true;
-    }, 2000);
+    }, 800);
   }
 }
