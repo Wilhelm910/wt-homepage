@@ -1,3 +1,17 @@
+.position {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 32px;
+
+    @media (min-width: 680px) {
+        margin-right: 64px;
+    }
+    @media (min-width: 1200px) {
+        margin-right: 128px;
+    }
+}
+
 
 .arrow-box {
     width: 300px;
@@ -40,9 +54,10 @@
     100% {
         width: 255px;
     }
-  //  100% {
- //       transform: translate(-100px, 100px) rotate(-45deg) translateY(-1px);
-  //  }
+
+    //  100% {
+    //       transform: translate(-100px, 100px) rotate(-45deg) translateY(-1px);
+    //  }
 
 }
 
