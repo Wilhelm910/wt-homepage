@@ -1,0 +1,86 @@
+.position {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 32px;
+
+    @media (min-width: 680px) {
+        margin-right: 64px;
+    }
+    @media (min-width: 1200px) {
+        margin-right: 128px;
+    }
+}
+
+
+.arrow-box {
+    width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 200px;
+}
+
+
+.diagonal {
+    position: absolute;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 140px;
+    transform: rotate(-45deg) translateY(-1px);
+    transform-origin: bottom right;
+
+}
+
+.arrow-head {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes moving-arrow {
+    100% {
+        transform: translate(-80px, 80px);
+    }
+}
+
+@keyframes moving-arrow2 {
+    100% {
+        width: 255px;
+    }
+
+    //  100% {
+    //       transform: translate(-100px, 100px) rotate(-45deg) translateY(-1px);
+    //  }
+
+}
+
+.movedDiag {
+    animation: moving-arrow2 0.5s forwards;
+}
+
+.movedHead {
+    animation: moving-arrow 0.5s forwards;
+}
+
+.hide-diag {
+    transform: rotate(-45deg) translateY(1px);
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    background-color: #FFFCF3;
+    animation: hideDiag 0.5s forwards;
+}
+
+@keyframes hideDiag {
+    100% {
+        width: 120px;
+        transform: rotate(-45deg) translateY(40px);
+    }
+}

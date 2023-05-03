@@ -12,6 +12,7 @@ export class HeaderComponent {
   icons = ['transition1.svg', 'transition2.svg', 'transition3.svg', 'x.svg']
   currentIcon = ''
 
+
   openMenu() {
     this.moveNavOut = false;
     this.animate()

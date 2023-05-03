@@ -13,6 +13,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FooterComponent } from './footer/footer.component';
 import { MovingArrowComponent } from './moving-arrow/moving-arrow.component';
 import { MovingArrowToRightComponent } from './moving-arrow-to-right/moving-arrow-to-right.component';
+import { MovingArrow2Component } from './moving-arrow2/moving-arrow2.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MovingArrowToRightComponent } from './moving-arrow-to-right/moving-arro
     ContactFormComponent,
     FooterComponent,
     MovingArrowComponent,
-    MovingArrowToRightComponent
+    MovingArrowToRightComponent,
+    MovingArrow2Component
   ],
   imports: [
     BrowserModule,
