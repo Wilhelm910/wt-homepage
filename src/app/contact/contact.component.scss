@@ -1,13 +1,27 @@
 .contact-introduction {
     background-color: black;
+    padding-left: 32px;
+    padding-right: 32px;
 
     h3 {
-        margin: -80px 32px 0 32px;
+        margin: -23px 0 16px 0;
         font-family: 'Syne';
         font-weight: 800;
         font-size: 45px;
         color: #FFFCF3;
         animation: color-change 3s infinite;
+
+        @media (min-width:680px) {
+            margin-left: 64px;
+        }
+
+        @media (min-width:980px) {
+            font-size: 78px;
+        }
+
+        @media (min-width:1200px) {
+            margin-left: 128px;
+        }
     }
 
     h4 {
@@ -16,6 +30,7 @@
         line-height: 120%;
         text-align: center;
         color: #FF9900;
+        margin-bottom: 16px;
     }
 
     p {
@@ -36,5 +51,11 @@
         100% {
             color: #FFFCF3;
         }
+    }
+}
+
+.cap {
+    @media (min-width:980px) {
+        text-transform: capitalize;
     }
 }

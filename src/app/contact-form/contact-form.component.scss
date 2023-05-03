@@ -35,6 +35,10 @@ textarea {
         outline: none;
         border: 4px solid  #FFFCF3;;
     }
+
+    @media (min-width: 980px) {
+        width: 480px;
+    }
 }
 
 textarea {

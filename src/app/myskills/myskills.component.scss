@@ -4,6 +4,16 @@ fieldset {
     margin-right: 24px;
     position: relative;
     z-index: 3;
+
+    @media (min-width: 680px) {
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-left: 128px;
+        margin-right: 128px;
+    }
 }
 
 legend {
@@ -13,6 +23,15 @@ legend {
     line-height: 100%;
     text-align: center;
     letter-spacing: 0.01em;
+}
+
+.skill-section {
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    @media (min-width: 1200px) {
+        margin: 64px;
+    }
 }
 
 
@@ -26,7 +45,7 @@ legend {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        margin: 8px;
+        margin: 16px;
         flex: 1 1 auto;
 
         p {

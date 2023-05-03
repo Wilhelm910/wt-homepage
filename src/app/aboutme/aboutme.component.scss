@@ -1,6 +1,15 @@
 .aboutme-section {
     margin-top: 20px;
 
+    >div {
+        @media (min-width: 980px) {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    
+
     h2 {
         font-family: 'Syne';
         font-weight: 800;
@@ -8,7 +17,7 @@
         text-align: center;
         letter-spacing: 0.01em;
         line-height: 100%;
-        margin-bottom: 16px;
+        margin-bottom: 32px;
 
         @media (min-width: 680px) {
             font-size: 64px;
@@ -16,6 +25,8 @@
 
         @media (min-width: 980px) {
             font-size: 78px;
+            text-align: start;
+            margin-left: 128px;
         }
     }
 
@@ -25,104 +36,43 @@
 
         @media (min-width: 680px) {
             margin-left: 64px;
-            margin-right: 64px;
         }
 
         @media (min-width: 1200px) {
             margin-left: 128px;
-            margin-right: 128px;
         }
 
     }
 
-    div {
-        position: relative;
-        z-index: 2;
-        margin-top: 128px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
 
     img {
         width: 336px;
         height: 336px;
         object-fit: cover;
-        object-position: 50% 20%
+        object-position: 50% 20%;
+
+        @media (min-width: 1200px) {
+            width: 533px;
+            height: 533px;
+        }
     }
 }
 
-.arrow-box {
-    width: 300px;
+.img-container {
     position: relative;
+    z-index: 2;
+    margin-top: 128px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    height: 200px;
-}
+    align-items: center;
+    justify-content: center;
 
-svg {
-    position: absolute;
-}
-
-.diagonal {
-    position: absolute;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    width: 140px;
-    transform: rotate(-45deg) translateY(-1px);
-    transform-origin: bottom right;
-
-}
-
-.arrow-head {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    border-left: 4px solid black;
-    border-bottom: 4px solid black;
-    width: 50px;
-    height: 50px;
-}
-
-@keyframes moving-arrow {
-    100% {
-        transform: translate(-80px, 80px);
-    }
-}
-
-@keyframes moving-arrow2 {
-    100% {
-        width: 255px;
+    @media (min-width: 980px) {
+        margin-top: 0;
+        margin-right: 64px;
     }
 
-    //  100% {
-    //       transform: translate(-100px, 100px) rotate(-45deg) translateY(-1px);
-    //  }
-
-}
-
-.movedDiag {
-    animation: moving-arrow2 0.5s forwards;
-}
-
-.movedHead {
-    animation: moving-arrow 0.5s forwards;
-}
-
-.hide-diag {
-    transform: rotate(-45deg) translateY(1px);
-    width: 20px;
-    height: 10px;
-    position: absolute;
-    background-color: #FFFCF3;
-    animation: hideDiag 0.5s forwards;
-}
-
-@keyframes hideDiag {
-    100% {
-        width: 120px;
-        transform: rotate(-45deg) translateY(40px);
+    @media (min-width: 1200px) {
+        margin-right: 128px;
     }
 }
