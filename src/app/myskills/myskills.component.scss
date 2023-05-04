@@ -23,6 +23,14 @@ legend {
     line-height: 100%;
     text-align: center;
     letter-spacing: 0.01em;
+
+    @media (min-width: 980px) {
+        font-size: 64px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 78px;
+    }
 }
 
 .skill-section {
@@ -32,6 +40,19 @@ legend {
 
     @media (min-width: 1200px) {
         margin: 64px;
+    }
+}
+
+.skill-img {
+
+    @media (min-width: 980px) {
+        width: 68px;
+        height: 68px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 75px;
+        height: 75px;
     }
 }
 
@@ -48,6 +69,14 @@ legend {
         align-items: center;
         margin: 16px;
         flex: 1 1 auto;
+
+        @media (min-width: 980px) {
+            margin: 32px;
+        }
+
+        @media (min-width: 1200px) {
+            margin: 42px;
+        }
 
         p {
             font-weight: 700;

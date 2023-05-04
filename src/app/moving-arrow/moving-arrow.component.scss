@@ -84,3 +84,67 @@
         transform: rotate(-45deg) translateY(40px);
     }
 }
+
+
+
+
+.container {
+    margin-left: 32px;
+
+    @media (min-width: 1200px) {
+        margin-left: 128px;
+    }
+}
+
+#path1 {
+    d: path("M42.1074 110.895V193.521H124.734")
+}
+
+#path2 {
+    d: path("M194.313 41.3125L42.106 193.52")
+}
+
+.svgMoved {
+
+    animation: move 0.7s forwards;
+
+    #path1 {
+        animation: animate-path1 0.7s forwards;
+    }
+
+    #path2 {
+        animation: animate-path2 0.7s forwards;
+    }
+
+}
+
+@keyframes move {
+    70% {
+        transform: translate(0)
+    }
+
+    100% {
+        transform: translate(-80px, -80px)
+    }
+}
+
+@keyframes animate-path1 {
+    70% {
+        d: path("M41.3154 182.891V265.518H123.942")
+    }
+
+    100% {
+        d: path("M42.1074 110.895V193.521H124.734")
+    }
+}
+
+@keyframes animate-path2 {
+    70% {
+        d: path("M265.313 41.5195L41.3135 265.52")
+    }
+
+    100% {
+        transform: translate(30px 30px);
+        d: path("M194.313 41.3125L42.106 193.52")
+    }
+}

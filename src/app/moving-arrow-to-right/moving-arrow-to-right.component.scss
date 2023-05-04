@@ -35,7 +35,7 @@
 @keyframes moving-arrow2 {
     100% {
         width: 210px;
-      //  width: 255px;
+        //  width: 255px;
         transform: rotate(225deg) translateY(-41px);
     }
 
@@ -59,7 +59,7 @@
     height: 10px;
     position: absolute;
     background-color: #FFFCF3;
-  
+
     animation: hideDiag 0.5s forwards;
 }
 
@@ -67,5 +67,68 @@
     100% {
         width: 235px;
         transform: rotate(225deg) translateY(23px);
+    }
+}
+
+
+
+.container {
+    margin-left: 32px;
+
+    @media (min-width: 1200px) {
+        margin-left: 128px;
+    }
+}
+
+#path1 {
+    d: path("M193.893 110.895V193.521H111.266")
+}
+
+#path2 {
+    d: path("M41.6865 41.3125L193.894 193.52")
+}
+
+.svgMoved {
+
+    animation: move 0.7s forwards;
+
+    #path1 {
+        animation: animate-path1 0.7s forwards;
+    }
+
+    #path2 {
+        animation: animate-path2 0.7s forwards;
+    }
+
+}
+
+@keyframes move {
+    70% {
+        transform: translate(0)
+    }
+
+    100% {
+        transform: translate(80px, 80px)
+    }
+}
+
+@keyframes animate-path1 {
+    70% {
+        d: path("M265.893 182.891V265.518H183.266")
+    }
+
+    100% {
+        d: path("M193.893 110.895V193.521H111.266")
+    }
+}
+
+@keyframes animate-path2 {
+    70% {
+        d: path("M41.894 41.5195L265.894 265.52")
+    }
+
+    100% {
+        transform: translate(30px 30px);
+        d: path("M41.6865 41.3125L193.894 193.52")
     }
 }

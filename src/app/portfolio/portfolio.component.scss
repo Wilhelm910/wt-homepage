@@ -174,7 +174,11 @@
     margin: 16px 32px 32px 32px;
 
     @media (min-width: 1200px) {
-        max-width: 400px;
+        max-width: 500px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 700px;
     }
 
     h3 {
