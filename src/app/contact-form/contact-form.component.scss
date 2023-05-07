@@ -90,6 +90,10 @@ button {
         margin-right: 128px;
     }
 
+    @media (min-width:1800px) {
+        margin-right: 328px;
+    }
+
     svg {
         cursor: pointer;
         &:hover {
