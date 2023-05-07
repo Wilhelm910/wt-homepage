@@ -8,7 +8,7 @@
         }
     }
 
-    
+
 
     h2 {
         font-family: 'Syne';
@@ -74,5 +74,39 @@
 
     @media (min-width: 1200px) {
         margin-right: 128px;
+    }
+}
+
+.flex-center {
+    display: none;
+
+    @media (min-width: 980px) {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+button {
+    background-color: #FFFCF3;
+    color: #000000;
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    border: 4px solid black;
+    padding: 20px 40px;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 24px;
+
+    &:hover {
+        animation: padding 0.2s forwards;
+    }
+}
+
+@keyframes padding {
+    100% {
+        padding: 20px 60px;
     }
 }
