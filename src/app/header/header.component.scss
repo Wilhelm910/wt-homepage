@@ -232,3 +232,29 @@ svg {
 .close-menu {
     cursor: pointer;
 }
+
+.margin-left {
+    @media (min-width: 680px) {
+        margin-left: 64px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-left: 128px;
+    }
+    @media (min-width: 1800px) {
+        margin-left: 328px;
+    }
+}
+
+.margin-right {
+    @media (min-width: 680px) {
+        margin-right: 64px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 128px;
+    }
+    @media (min-width: 1800px) {
+        margin-right: 328px;
+    }
+}
