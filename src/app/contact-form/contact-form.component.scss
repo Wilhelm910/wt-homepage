@@ -4,7 +4,7 @@
 }
 
 form {
-    margin: 32px;
+    margin: 32px 32px 0 32px;
     scroll-margin-top: 250px;
     display: flex;
     flex-direction: column;
@@ -14,11 +14,11 @@ form {
 
 input,
 textarea {
+    box-sizing: border-box;
     margin: 8px 0;
     font-family: 'Overpass';
-    padding: 10px 25px;
-    gap: 10px;
-    height: 30px;
+    padding: 15px 25px;
+    height: 35px;
     width: 280px;
     background: #000000;
     border: none;
@@ -39,6 +39,11 @@ textarea {
     @media (min-width: 980px) {
         width: 480px;
     }
+
+    &:hover {
+        cursor: pointer;
+        border: 4px solid #FFFCF3;;
+    }
 }
 
 textarea {
@@ -57,6 +62,16 @@ button {
     gap: 10px;
     cursor: pointer;
     margin-top: 24px;
+
+    &:hover {
+       animation: padding 0.2s forwards;
+    }
+}
+
+@keyframes padding {
+    100% {
+        padding: 20px 60px;
+    }
 }
 
 .arrow-container {

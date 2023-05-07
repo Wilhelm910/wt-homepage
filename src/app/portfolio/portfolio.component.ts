@@ -7,11 +7,19 @@ import * as data from 'src/assets/json/projects.json';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-
+  slideIn = false;
   projectData: any = data.default;
  
   ngOnInit(): void {
  
+  }
+
+  hovered() {
+    this.slideIn = true;
+  }
+
+  hoveredEnd() {
+    this.slideIn = false;
   }
 
 }

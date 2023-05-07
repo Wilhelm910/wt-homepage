@@ -7,15 +7,18 @@ import { Component } from '@angular/core';
 })
 export class MovingArrow2Component {
 
-  movedDiag = false;
-  movedHead = false;
-  hideDiag = false;
+ // movedDiag = false;
+ // movedHead = false;
+ // hideDiag = false;
+  svgMoved = false;
 
   hovered() {
-    this.movedDiag = true;
-    this.movedHead = true;
+  //  this.movedDiag = true;
+  //  this.movedHead = true;
+    this.svgMoved = true;
     setTimeout(() => {
-      this.hideDiag = true;
+   //   this.hideDiag = true;
     }, 500);
   }
+
 }

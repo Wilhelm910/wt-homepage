@@ -1,17 +1,10 @@
-<div class="position">
-    <a href="#skills">
-        <div class="arrow-box" (mouseover)="hovered()">
-            <div class="diagonal" [ngClass]="{'movedDiag' : movedDiag}"></div>
-            <div [ngClass]="{'hide-diag' : hideDiag}"></div>
-            <div class="arrow-head" [ngClass]="{'movedHead' : movedHead}"></div>
-        </div>
-    </a>
-</div>
 
 <div class="container" (mouseover)="hovered()">
-    <svg width="276" height="307" viewBox="0 0 276 307" fill="none" xmlns="http://www.w3.org/2000/svg" [ngClass]="{'svgMoved' : svgMoved}">
-        <path id="path1" stroke="black" stroke-width="4" />
-        <path id="path2" stroke="black" stroke-width="4" />
-    </svg>
+    <a href="#skills">
+        <svg class="rotate" width="307" height="307" viewBox="0 0 307 307" fill="none"
+            xmlns="http://www.w3.org/2000/svg" [ngClass]="{'svgMoved' : svgMoved}">
+            <path id="path1" stroke="black" stroke-width="4" />
+            <path id="path2" stroke="black" stroke-width="4" />
+        </svg>
+    </a>
 </div>
-

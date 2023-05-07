@@ -3,7 +3,7 @@
     <p>This page is a sample of my work <br>- please feel free to try them out.</p>
 </div>
 <div class="portfolio-content">
-    <div class="projects-container" *ngFor="let project of projectData; let i = index" >
+    <div class="projects-container" *ngFor="let project of projectData; let i = index" (mouseover)="hovered()" (mouseleave)="hoveredEnd()">
         <div class="project-counter" [class.left]="i % 2 != 0">
             <p>0{{ i+1 }}/0{{ projectData.length }}</p>
         </div>
@@ -18,7 +18,7 @@
                 </svg>
                 <img src="{{ project.image }}">
             </div>
-            <div class="hide portfolio-description" [class.text-align]="i % 2 != 0">
+            <div class="hide portfolio-description" [class.text-align]="i % 2 != 0" [ngClass]="{'slideIn' : slideIn , 'slideInRev' : i % 2 != 0 && slideIn }">
                 <h3>{{ project.name }}</h3>
                 <p class="categorys">{{ project.categorys }}</p>
                 <p [class.reverse-text]="i % 2 != 0">{{ project.description }}</p>
