@@ -14,6 +14,9 @@ import { FooterComponent } from './footer/footer.component';
 import { MovingArrowComponent } from './moving-arrow/moving-arrow.component';
 import { MovingArrowToRightComponent } from './moving-arrow-to-right/moving-arrow-to-right.component';
 import { MovingArrow2Component } from './moving-arrow2/moving-arrow2.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { MainComponent } from './main/main.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { MovingArrow2Component } from './moving-arrow2/moving-arrow2.component';
     FooterComponent,
     MovingArrowComponent,
     MovingArrowToRightComponent,
-    MovingArrow2Component
+    MovingArrow2Component,
+    LegalNoticeComponent,
+    MainComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,

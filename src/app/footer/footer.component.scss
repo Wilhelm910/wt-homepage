@@ -34,7 +34,7 @@ svg {
 }
 
 .icons {
-   
+
 
     @media (min-width: 980px) {
         display: flex;
@@ -66,8 +66,8 @@ svg {
 }
 
 .flex-end {
-    margin-left: 80vw;
-    position: relative;
+  //  margin-left: 80vw;
+ //   position: relative;
 
     a {
         @media (min-width: 980px) {
@@ -79,7 +79,7 @@ svg {
         margin-left: auto;
         font-size: 23px;
     }
-
+/*
     &:hover {
         &:before {
 
@@ -96,22 +96,24 @@ svg {
         position: absolute;
         background-color: black
     }
-
+*/
     @media (min-width: 980px) {
 
         a {
             margin-right: 16px;
+            margin-left: 16px;
 
 
             &:hover {
-                border-bottom: 3px solid rgba(255, 153, 0, 1);
+              color: rgba(255, 153, 0, 1);
 
             }
         }
 
         display: flex;
         justify-content: flex-end;
-        margin-top: -50px;
+        align-items: center;
+        margin-top: -40px;
         margin-right: 64px;
     }
 

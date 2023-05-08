@@ -258,3 +258,19 @@ svg {
         margin-right: 328px;
     }
 }
+
+.scale {
+    svg {
+        transition: all 175ms ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-10px);
+            transition: all 175ms ease-in-out;
+        }
+        @media (min-width: 980px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

@@ -38,13 +38,13 @@
 <div class="menu" *ngIf="showMenu">
     <div class="navigation">
         <div>
-            <a href="#">About me</a>
+            <a href="#aboutme" (click)="closeMenu()">About me</a>
         </div>
         <div>
-            <a href="#">My skills</a>
+            <a href="#skills" (click)="closeMenu()">My skills</a>
         </div>
         <div>
-            <a href="#">Portfolio</a>
+            <a href="#portfolio" (click)="closeMenu()">Portfolio</a>
         </div>
     </div>
     <div class="navigation2" [ngClass]="{'movedNavOut' : moveNavOut}">
@@ -56,7 +56,7 @@
                 <p>Say hi!</p>
                 <a href="#">wilhelm.teicke@googlemail.com</a>
             </div>
-            <div class="flex-end margin-right">
+            <div class="flex-end margin-right scale">
                 <a href="https://github.com/Wilhelm910" target="_blank">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
