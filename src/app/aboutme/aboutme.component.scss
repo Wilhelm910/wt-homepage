@@ -51,6 +51,7 @@
 
 
     img {
+        border-radius: 50%;
         width: 336px;
         height: 336px;
         object-fit: cover;
@@ -64,6 +65,7 @@
 }
 
 .img-container {
+    border-radius: 50%;
     position: relative;
     z-index: 2;
     margin-top: 128px;

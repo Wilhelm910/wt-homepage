@@ -11,7 +11,7 @@ a {
 }
 
 p {
-    margin: 16px;
+    margin: 16px 16px 16px 0;
 
     @media (min-width: 980px) {
         margin-bottom: 0;
@@ -113,7 +113,7 @@ svg {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-top: -40px;
+        margin-top: 10px;
         margin-right: 64px;
     }
 
@@ -124,4 +124,23 @@ svg {
     @media (min-width: 1800px) {
         margin-right: 328px;
     }
+}
+
+.logo-container {
+
+    @media (max-width: 980px) {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    a {
+        display: flex;
+        width: 50px;
+        object-fit: contain;
+        img {
+            width: 100%;
+        }
+    }
+   
 }

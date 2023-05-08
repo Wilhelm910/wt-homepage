@@ -25,8 +25,11 @@
                 <p class="categorys">{{ project.categorys }}</p>
                 <p [class.reverse-text]="i % 2 != 0">{{ project.description }}</p>
                 <div class="margin-top32">
-                    <a href="{{ project.link1 }}" target="_blank" class="button-live-test">
+                    <a href="{{ project.link1 }}" target="_blank" class="button-live-test" [class.margin16-left]="i % 2 != 0" [class.margin16-right]="i % 2 == 0">
                         {{ project.button1 }}
+                    </a>
+                    <a href="{{ project.link2 }}" target="_blank" class="button-live-test" [class.margin16-left]="i % 2 != 0" [class.margin16-right]="i % 2 == 0">
+                        {{ project.button2 }}
                     </a>
                 </div>
             </div>

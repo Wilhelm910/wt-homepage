@@ -128,7 +128,7 @@
     }
 
     svg {
-        animation: jumpInfinite 1.5s infinite;
+        animation: jumpInfinite 1.9s infinite;
         height: 100%;
     }
 }
@@ -172,6 +172,12 @@
 .rotate {
     transform: rotate(180deg);
     writing-mode: vertical-lr;
+
+    a {
+        &:hover {
+            color: #FF9900;
+        }
+    }
 }
 
 .position-rel {
