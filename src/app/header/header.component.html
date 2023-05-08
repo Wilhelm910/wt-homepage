@@ -8,15 +8,8 @@
     <a class="logo-container" href="#hero">
         <img src="/assets/img/Logo_black.png">
     </a>
-    <div class="menu-img-container">
-        <svg *ngIf="!showMenu" (click)="openMenu()" width="44" height="38" viewBox="0 0 44 38" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 2H42" stroke="black" stroke-width="4" stroke-linecap="square" />
-            <path d="M2 19H42" stroke="black" stroke-width="4" stroke-linecap="square" />
-            <path d="M2 36H42" stroke="black" stroke-width="4" stroke-linecap="square" />
-        </svg>
-        <img class="close-menu" *ngIf="showMenu" (click)="closeMenu()" src="/assets/img/{{ currentIcon }}">
-    </div>
+    <div *ngIf="!showMenu" class="menu-btn" (click)="openMenu()" [ngClass]="{'animateMenu' : animateMenu}"></div>
+    <div *ngIf="showMenu" class="menu-btn-rev" (click)="closeMenu()" [ngClass]="{'animateMenuRev' : animateMenuRev}"></div>
 </div>
 
 <div class="menu" *ngIf="showMenu">
