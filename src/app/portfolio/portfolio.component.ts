@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from 'src/assets/json/projects.json';
+import AOS from "aos";
 
 @Component({
   selector: 'app-portfolio',
@@ -11,7 +12,7 @@ export class PortfolioComponent implements OnInit {
   projectData: any = data.default;
  
   ngOnInit(): void {
- 
+    AOS.init();
   }
 
   hovered() {

@@ -4,24 +4,25 @@
 </div>
 <div class="portfolio-content">
     <div class="projects-container" *ngFor="let project of projectData; let i = index">
-        <div class="project-counter" [class.left]="i % 2 != 0">
-            <p>0{{ i+1 }}/0{{ projectData.length }}</p>
-        </div>
-        <div class="flex showAnimations" [class.reverse]="i % 2 != 0" (mouseover)="hovered()"
-        (mouseleave)="hoveredEnd()">
-            
-                <div class="img-container" [class.img-container-left]="i % 2 != 0">
-                    <svg style="transform-origin: center center" width="48" height="48" viewBox="0 0 68 68" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect x="67.8823" y="33.9414" width="48" height="48" rx="24"
-                            transform="rotate(135 67.8823 33.9414)" fill="black" />
-                        <path d="M33.7026 52.1094L33.4636 16.0171" stroke="#FFFCF3" stroke-width="2" />
-                        <path d="M43.2635 42.5485L33.7026 52.1094L24.1418 42.5485" stroke="#FFFCF3" stroke-width="2" />
-                    </svg>
-                    <img src="{{ project.image }}">
+        <div class="flex showAnimations" [class.reverse]="i % 2 != 0">
+
+            <div class="img-container" [class.img-container-left]="i % 2 != 0" data-aos="fade-right">
+                <svg style="transform-origin: center center" width="48" height="48" viewBox="0 0 68 68" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="67.8823" y="33.9414" width="48" height="48" rx="24" transform="rotate(135 67.8823 33.9414)"
+                        fill="black" />
+                    <path d="M33.7026 52.1094L33.4636 16.0171" stroke="#FFFCF3" stroke-width="2" />
+                    <path d="M43.2635 42.5485L33.7026 52.1094L24.1418 42.5485" stroke="#FFFCF3" stroke-width="2" />
+                </svg>
+                <img src="{{ project.image }}">
+            </div>
+            <div class="hide portfolio-description" [class.text-align]="i % 2 != 0"
+                [ngClass]="{'slideInRev' : i % 2 != 0 && slideIn, 'slideIn' : slideIn && i % 1 == 0 }"
+                data-aos="fade-left">
+                <div class="project-counter" [class.left]="i % 2 != 0" data-aos="fade-down">
+                    <p>0{{ i+1 }}/0{{ projectData.length }}</p>
                 </div>
-                <div class="hide portfolio-description" [class.text-align]="i % 2 != 0"
-                    [ngClass]="{'slideInRev' : i % 2 != 0 && slideIn, 'slideIn' : slideIn && i % 1 == 0 }">
+                <div>
                     <h3>{{ project.name }}</h3>
                     <p class="categorys">{{ project.categorys }}</p>
                     <p [class.reverse-text]="i % 2 != 0">{{ project.description }}</p>
@@ -36,7 +37,8 @@
                         </a>
                     </div>
                 </div>
-          
+            </div>
+
         </div>
     </div>
 </div>
