@@ -31,9 +31,9 @@
     },
     {
         "image": "assets/img/p-pokedex.svg",
-        "name": "Platzhalter",
+        "name": "Ring of Fire",
         "categorys": "Angular | Typescript | HTML | SCSS | Firebase",
-        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "description": "A simple card game you can play with your friends.",
         "button1": "Test",
         "button2": "Github",
         "link1": "https://wt-ringoffire.web.app/",

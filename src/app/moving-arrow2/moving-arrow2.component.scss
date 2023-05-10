@@ -4,13 +4,16 @@
 }
 
 .container {
-    margin-right: 32px;
     position: relative;
     height: 300px;
 
     svg {
        position: absolute;
        right: 0;
+    }
+
+    @media (min-width: 680px) {
+        margin-right: 64px;
     }
 
     @media (min-width: 1200px) {

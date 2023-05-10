@@ -43,14 +43,14 @@
     justify-content: center;
     align-items: flex-start;
 
-    @media (min-width:1200px) {
+    @media (min-width:1300px) {
         flex-direction: row;
         justify-content: space-between;
     }
 }
 
 .reverse {
-    @media (min-width:1200px) {
+    @media (min-width:1300px) {
         flex-direction: row-reverse;
     }
 }
@@ -178,7 +178,7 @@
     }
 
     @media (min-width: 980px) {
-        width: 629px;
+        width: 550px;
         height: 393px;
     }
 
