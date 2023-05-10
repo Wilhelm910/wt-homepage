@@ -52,10 +52,15 @@
 
     img {
         border-radius: 50%;
-        width: 336px;
-        height: 336px;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
         object-position: 50% 20%;
+
+        @media (min-width: 400px) {
+            width: 336px;
+            height: 336px;
+        }
 
         @media (min-width: 1200px) {
             width: 533px;

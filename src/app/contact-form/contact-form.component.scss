@@ -44,7 +44,8 @@ textarea {
 
     &:hover {
         cursor: pointer;
-        border: 4px solid #FFFCF3;;
+        border: 4px solid #FFFCF3;
+        ;
     }
 }
 
@@ -64,9 +65,10 @@ button {
     gap: 10px;
     cursor: pointer;
     margin-top: 24px;
+    white-space: nowrap;
 
     &:hover {
-       animation: padding 0.2s forwards;
+        animation: padding 0.2s forwards;
     }
 }
 
@@ -85,7 +87,7 @@ button {
         display: flex;
         justify-content: flex-end;
         margin-right: 64px;
-        
+
     }
 
     @media (min-width:1200px) {
@@ -98,9 +100,10 @@ button {
 
     svg {
         cursor: pointer;
+
         &:hover {
             animation: stretch 1s;
-            
+
 
         }
     }
