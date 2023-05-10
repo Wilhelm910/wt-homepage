@@ -5,7 +5,7 @@
     <img src="/assets/img/x.svg">
 </div>
 <div class="header">
-    <a class="logo-container" href="#hero">
+    <a class="logo-container" href="#hero" (click)="closeMenu()">
         <img src="/assets/img/Logo_black.png">
     </a>
     <div *ngIf="!showMenu" class="menu-btn" (click)="openMenu()" [ngClass]="{'animateMenu' : animateMenu}"></div>
@@ -32,7 +32,7 @@
         <div class="bg-color">
             <div class="margin-left">
                 <p>Say hi!</p>
-                <a href="#">wilhelm.teicke@googlemail.com</a>
+                <a href="mailto:wilhelm.teicke@googlemail.com">wilhelm.teicke@googlemail.com</a>
             </div>
             <div class="flex-end margin-right scale">
                 <a href="https://github.com/Wilhelm910" target="_blank">

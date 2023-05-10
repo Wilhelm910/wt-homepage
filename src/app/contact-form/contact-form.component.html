@@ -1,5 +1,5 @@
-<div class="form-section">
-    <form id="contact" (submit)="sendMail()" ngNativeValidate #myForm>
+<div class="form-section scroll-offset" id="contact" >
+    <form  (submit)="sendMail()" ngNativeValidate #myForm>
         <input required type="text" placeholder="Your name" name="name" #nameField>
         <input required type="email" placeholder="Your email" name="email" #emailField>
         <textarea required class="textarea" type="textarea" placeholder="Your message" name="message"
@@ -7,7 +7,7 @@
         <button #buttonField>Send message</button>
     </form>
     <div class="arrow-container">
-        <a href="#hero">
+        <a (click)="scrollTop()">
             <svg width="54" height="77" viewBox="0 0 54 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M44.8525 38.125L26.9263 23.9988L9.00011 38.125" stroke="#FFFCF3" stroke-width="4" />
                 <path d="M26.9263 176.043L26.9263 23.999" stroke="#FFFCF3" stroke-width="4" />

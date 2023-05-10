@@ -17,6 +17,11 @@ export class ContactFormComponent implements OnInit {
 
   }
 
+  scrollTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   async sendMail() {
     let nameField = this.nameField.nativeElement;
     let messageField = this.messageField.nativeElement;
