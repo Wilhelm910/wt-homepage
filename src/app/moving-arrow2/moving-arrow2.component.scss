@@ -1,19 +1,20 @@
+.flexcenter {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .rotate {
     transform: rotate(90deg);
 }
 
 .container {
+    margin-bottom: -100px;
     position: relative;
     height: 300px;
-
+    margin-right: 100px;
     svg {
        position: absolute;
        right: 0;
-    }
-
-    @media (min-width: 680px) {
-        margin-right: 64px;
     }
 
     @media (min-width: 1200px) {

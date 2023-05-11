@@ -1,5 +1,6 @@
-<div class="form-section scroll-offset" id="contact" >
-    <form  (submit)="sendMail()" ngNativeValidate #myForm>
+<div class="form-section" id="contact" >
+    <div class="email-feedback" [ngClass]="{'show-feedback' : emailSent}">Email sent!</div>
+    <form  (submit)="sendMail()" ngNativeValidate #myFormv>
         <input required type="text" placeholder="Your name" name="name" #nameField>
         <input required type="email" placeholder="Your email" name="email" #emailField>
         <textarea required class="textarea" type="textarea" placeholder="Your message" name="message"

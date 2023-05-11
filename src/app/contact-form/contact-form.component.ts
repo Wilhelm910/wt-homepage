@@ -7,6 +7,8 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class ContactFormComponent implements OnInit {
 
+  emailSent = false;
+
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('emailField') emailField!: ElementRef;
@@ -23,6 +25,7 @@ export class ContactFormComponent implements OnInit {
   }
 
   async sendMail() {
+    this.emailSent = true;
     let nameField = this.nameField.nativeElement;
     let messageField = this.messageField.nativeElement;
     let emailField = this.emailField.nativeElement;
@@ -37,6 +40,9 @@ export class ContactFormComponent implements OnInit {
       body: fd
     })
     this.reactivateInput(nameField, messageField, emailField, buttonField)
+    setTimeout(() => {
+      this.emailSent = false;
+    }, 2000);
   }
 
   getInput(nameField:any, messageField:any, emailField:any, buttonField:any) {

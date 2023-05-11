@@ -17,6 +17,8 @@ import { MovingArrow2Component } from './moving-arrow2/moving-arrow2.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { MainComponent } from './main/main.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { FormsModule }   from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

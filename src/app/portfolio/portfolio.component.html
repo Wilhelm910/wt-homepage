@@ -6,7 +6,7 @@
     <div class="projects-container" *ngFor="let project of projectData; let i = index">
         <div class="flex showAnimations" [class.reverse]="i % 2 != 0">
 
-            <div class="img-container" [class.img-container-left]="i % 2 != 0" data-aos="fade-right">
+            <div class="img-container" [class.img-container-left]="i % 2 != 0" data-aos="fade-right" data-aos-offset="300">
                 <svg style="transform-origin: center center" width="48" height="48" viewBox="0 0 68 68" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect x="67.8823" y="33.9414" width="48" height="48" rx="24" transform="rotate(135 67.8823 33.9414)"
@@ -18,8 +18,8 @@
             </div>
             <div class="hide portfolio-description" [class.text-align]="i % 2 != 0"
                 [ngClass]="{'slideInRev' : i % 2 != 0 && slideIn, 'slideIn' : slideIn && i % 1 == 0 }"
-                data-aos="fade-left">
-                <div class="project-counter" [class.left]="i % 2 != 0" data-aos="fade-down">
+                data-aos="fade-left" data-aos-offset="300">
+                <div class="project-counter" [class.left]="i % 2 != 0" data-aos="fade-down" data-aos-offset="300">
                     <p>0{{ i+1 }}/0{{ projectData.length }}</p>
                 </div>
                 <div>

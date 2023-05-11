@@ -1,11 +1,42 @@
-.scroll-offset {
-    padding-top: 150px;
-}
+
 
 .form-section {
     background: #000000;
     margin-top: -35px;
+    position: relative;
 }
+
+.email-feedback {
+    background: #000000;
+    padding: 20px 40px;
+    font-size: 23px;
+    border:  4px solid #FFFCF3;;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    z-index: -1;
+}
+
+.show-feedback {
+    z-index: 6;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 form {
     margin: 32px 32px 0 32px;
