@@ -117,11 +117,15 @@
 
         svg {
             opacity: 1 !important;
-            animation: spin 0.5s forwards;
-
-            @media (min-width: 980px) {
-                animation: spin-scale 0.5s forwards;
+            /*
+            @media (max-width: 980px) {
+                animation: spin 0.5s forwards;
             }
+           */
+
+
+            animation: spin-scale 0.5s forwards;
+
         }
     }
 }
@@ -206,7 +210,7 @@
 
 @keyframes spin-scale {
     100% {
-        transform: rotate(-140deg) scale(1.8);
+        transform: rotate(-140deg) scale(1.2);
     }
 
 }

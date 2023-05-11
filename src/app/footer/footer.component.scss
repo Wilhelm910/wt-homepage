@@ -70,6 +70,11 @@ svg {
  //   position: relative;
 
     a {
+        
+        &:hover {
+            color: rgba(255, 153, 0, 1);
+
+          }
         @media (min-width: 980px) {
             font-size: 23px;
         }
@@ -79,24 +84,7 @@ svg {
         margin-left: auto;
         font-size: 23px;
     }
-/*
-    &:hover {
-        &:before {
 
-            top: 1.1em;
-            bottom: 0px;
-            left: -0.3em;
-            right: 70px;
-        }
-    }
-
-    &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        background-color: black
-    }
-*/
     @media (min-width: 980px) {
 
         a {
@@ -104,10 +92,6 @@ svg {
             margin-left: 16px;
 
 
-            &:hover {
-              color: rgba(255, 153, 0, 1);
-
-            }
         }
 
         display: flex;
