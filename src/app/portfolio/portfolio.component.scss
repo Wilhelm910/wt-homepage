@@ -191,6 +191,29 @@
         // top: 43%;
         // transform: translateY(-50%);
     }
+
+    &:hover {
+
+        
+            opacity: 1 !important;
+        
+        img {
+            box-sizing: border-box;
+            border: 4px solid black;
+            -webkit-filter: grayscale(0%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+        }
+
+        svg {
+            opacity: 1 !important;
+            animation: spin 0.5s forwards;
+
+            @media (min-width: 980px) {
+                animation: spin-scale 0.5s forwards;
+            }
+        }
+    }
 }
 
 @keyframes spin {

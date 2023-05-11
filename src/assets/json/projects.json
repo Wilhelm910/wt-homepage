@@ -30,7 +30,7 @@
         "link2": "https://github.com/Wilhelm910/Pokedex"
     },
     {
-        "image": "assets/img/p-pokedex.svg",
+        "image": "assets/img/ringoffire.PNG",
         "name": "Ring of Fire",
         "categorys": "Angular | Typescript | HTML | SCSS | Firebase",
         "description": "A simple card game you can play with your friends.",
