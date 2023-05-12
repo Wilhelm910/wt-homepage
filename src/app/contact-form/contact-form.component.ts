@@ -35,14 +35,14 @@ export class ContactFormComponent implements OnInit {
     fd.append('name', nameField.value)
     fd.append('email', emailField.value)
     fd.append('message', messageField.value)
-    await fetch('https://@wilhelm-teicke.developerakademie.net/Kontaktformular_homepage/send_mail.php', {
+    await fetch('http://w01dfddf.kasserver.com/send_mail/send_mail.php', {
       method: 'POST',
       body: fd
     })
     this.reactivateInput(nameField, messageField, emailField, buttonField)
     setTimeout(() => {
       this.emailSent = false;
-    }, 2000);
+    }, 3000);
   }
 
   getInput(nameField:any, messageField:any, emailField:any, buttonField:any) {
