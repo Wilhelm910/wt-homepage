@@ -8,6 +8,8 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 export class ContactFormComponent implements OnInit {
 
   emailSent = false;
+  emailNotSent = false;
+  
 
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
@@ -25,7 +27,6 @@ export class ContactFormComponent implements OnInit {
   }
 
   async sendMail() {
-    this.emailSent = true;
     let nameField = this.nameField.nativeElement;
     let messageField = this.messageField.nativeElement;
     let emailField = this.emailField.nativeElement;
@@ -35,11 +36,12 @@ export class ContactFormComponent implements OnInit {
     fd.append('name', nameField.value)
     fd.append('email', emailField.value)
     fd.append('message', messageField.value)
-    await fetch('http://w01dfddf.kasserver.com/send_mail/send_mail.php', {
+    await fetch('https://wilhelm-teicke.developerakademie.net/send_mail/send_mail.php', {
       method: 'POST',
       body: fd
     })
-    this.reactivateInput(nameField, messageField, emailField, buttonField)
+    this.emailSent = true;
+    this.activateInput(nameField, messageField, emailField, buttonField)
     setTimeout(() => {
       this.emailSent = false;
     }, 3000);
@@ -52,7 +54,7 @@ export class ContactFormComponent implements OnInit {
     buttonField.disabled = true;
   }
 
-  reactivateInput(nameField:any, messageField:any, emailField:any, buttonField:any) {
+  activateInput(nameField:any, messageField:any, emailField:any, buttonField:any) {
     nameField.disabled = false;
     messageField.disabled = false;
     emailField.disabled = false;
@@ -60,6 +62,24 @@ export class ContactFormComponent implements OnInit {
     nameField.value = '';
     messageField.value = '';
     emailField.value = '';
+  }
+
+
+  checkStatus() {
+    setTimeout(() => {
+      if (this.emailSent == false) {
+        this.emailNotSent = true;
+        let nameField = this.nameField.nativeElement;
+        let messageField = this.messageField.nativeElement;
+        let emailField = this.emailField.nativeElement;
+        let buttonField = this.buttonField.nativeElement;
+        this.getInput(nameField, messageField, emailField, buttonField)
+        this.activateInput(nameField, messageField, emailField, buttonField)
+        setTimeout(() => {
+          this.emailNotSent = false;
+        }, 3000);
+      }
+    }, 1000);
   }
 
 }

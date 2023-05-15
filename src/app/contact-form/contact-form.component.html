@@ -1,6 +1,7 @@
 <div class="form-section" id="contact" >
     <div class="email-feedback" [ngClass]="{'show-feedback' : emailSent}">Email sent!</div>
-    <form  (submit)="sendMail()" ngNativeValidate #myFormv>
+    <div class="email-feedback" [ngClass]="{'show-feedback' : emailNotSent}">Email not sent! Try again later!</div>
+    <form  (submit)="sendMail(); checkStatus()" ngNativeValidate #myFormv>
         <input required type="text" placeholder="Your name" name="name" #nameField>
         <input required type="email" placeholder="Your email" name="email" #emailField>
         <textarea required class="textarea" type="textarea" placeholder="Your message" name="message"
