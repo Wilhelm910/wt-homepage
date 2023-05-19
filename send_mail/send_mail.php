@@ -44,7 +44,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $headers = "From:  noreply@developerakademie.com";
 
         mail($recipient, $subject, $_POST['message'], $headers);
-        header("Location: " . $redirect); 
+      //  header("Location: " . $redirect); 
 
         break;
     default: //Reject any non POST or OPTIONS requests.

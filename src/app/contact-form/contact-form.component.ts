@@ -79,7 +79,7 @@ export class ContactFormComponent implements OnInit {
           this.emailNotSent = false;
         }, 3000);
       }
-    }, 1000);
+    }, 2000);
   }
 
 }
