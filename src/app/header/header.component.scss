@@ -115,6 +115,7 @@ svg {
 }
 
 
+
 .menu {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -129,6 +130,10 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    @media (max-height: 780px) {
+        top: 66px;
+    }
 }
 
 .navigation {
