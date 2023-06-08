@@ -11,6 +11,11 @@
     z-index: 999;
     background-color: #FFFCF3;
 
+    @media (max-height: 780px) {
+        padding-bottom: 0px;
+        padding-top: 8px;
+    }
+
     @media (min-width: 680px) {
         padding-left: 64px;
         padding-right: 64px;
@@ -134,9 +139,17 @@ svg {
     font-weight: 700;
     font-size: 45px;
 
+    @media (max-height: 780px) {
+        margin-top: -270px;
+    }
+
     @media (min-width: 680px) {
         font-weight: 700;
         font-size: 96px;
+    }
+
+    @media (max-height: 780px) {
+        font-size: 56px;
     }
 
     div {
@@ -207,6 +220,10 @@ svg {
 
 .rect {
     margin-bottom: -23px;
+
+    @media (max-height: 780px) {
+        margin-bottom: -60px;
+    }
 }
 
 .flex-end {
@@ -214,6 +231,11 @@ svg {
     justify-content: flex-end;
     margin-top: 16px;
     padding-bottom: 16px;
+
+    @media (max-height: 780px) {
+        margin-top: 4px;
+        padding-bottom: 4px;
+    }
 }
 
 .margin32 {
@@ -242,6 +264,10 @@ svg {
         @media (min-width: 680px) {
             font-weight: 800;
             font-size: 78px;
+        }
+        @media (max-height: 780px) {
+            font-size: 56px;
+            margin-bottom: 4px;
         }
 
     }
